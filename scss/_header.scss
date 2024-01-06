@@ -1,0 +1,79 @@
+// .header {
+//     text-align: center;
+
+//     &__name {
+//         @include mq(xxsmall-landscape) {
+//             font-size: 4rem;
+//         }
+
+//         @include mq(small-landscape) {
+//             font-size: 3.5rem;
+//         }
+
+//         @include mq(large-landscape) {
+//             font-size: 3rem;
+//         }
+//     }
+
+//     &__position {
+//         font-size: 1.2rem;
+
+//         @include mq(xxsmall-landscape) {
+//             font-size: 1.5rem;
+//         }
+//     }
+// }
+
+
+
+
+
+.header {
+    text-align: center;
+
+    &__name {
+        @include mq(xxsmall-landscape) {
+            font-size: 4rem;
+        }
+
+        @include mq(small-landscape) {
+            font-size: 3.5rem;
+        }
+
+        @include mq(large-landscape) {
+            font-size: 3rem;
+        }
+    }
+
+    &__position {
+        font-size: 1.2rem;
+
+        @include mq(xxsmall-landscape) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.header-and-buttons {
+    @include mq(xxsmall-landscape) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .top-buttons-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3vh;
+        margin-top: 2vh;
+
+        button {
+            all: unset;
+            padding: .5vh 1vh;
+            font-size: 1rem;
+            background-color: lighten($color, 7%);
+            border-radius: 1vh;
+            cursor: pointer;
+        }
+    }
+}

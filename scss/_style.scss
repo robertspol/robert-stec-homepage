@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 2.5vh;
+    font-family: Exo2;
+}
+
+body {
+    background-color: $color;
+    color: #eee;
+}
+
+.container {
+    width: 90%;
+    margin: 1vh auto;
+
+    @include mq(xxsmall-landscape) {
+        width: 60%;
+    }
+}
+
+.main {
+    &__section {
+        margin-top: 1vh;
+        border-bottom: solid .4vh #eee;
+        text-align: justify;
+
+        .main__section-name {
+            font-family: Agbalumo;
+            text-align: center;
+
+            @include mq(xxsmall-landscape) {
+                font-size: 2rem;
+            }
+
+            @include mq(xlarge-landscape) {
+                font-size: 1.6em;
+            }
+        }
+
+        p {
+            @include mq(xxsmall-landscape) {
+                font-size: 1.5rem;
+            }
+
+            @include mq(xlarge-landscape) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.about {
+    p {
+        margin: 2vh 0;
+        line-height: 1.5;
+    }
+}
+
+footer {
+    margin-top: 1vh;
+    text-align: center;
+
+    @include mq(xxsmall-landscape) {
+        font-size: 1.5rem;
+    }
+
+    @include mq(xlarge-landscape) {
+        font-size: 1.2rem;
+    }
+}
+
+.fa-angles-up {
+    display: none;
+    position: fixed;
+    right: .5vh;
+    bottom: .5vh;
+    font-size: 1.2rem;
+    color: #0f0;
+    cursor: pointer;
+
+    @include mq(xxsmall-landscape) {
+        right: 2vh;
+        bottom: 1vh;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,51 @@
+// .navigation {
+//     margin-top: 2vh;
+//     padding: .5vh 0;
+//     background-color: lighten($color, 3%);
+//     border: 1vh solid lighten($color, 15%);
+
+//     @include mq(xxsmall-landscape) {
+//         padding: 1vh 2vh;
+//         font-size: 1.3rem;
+//     }
+
+//     &__list {
+//         display: flex;
+//         justify-content: space-evenly;
+//         list-style-type: none;
+
+//         @include mq(xxsmall-landscape) {
+//             gap: 2vh;
+//         }
+
+//         li {
+//             @include mq(xxsmall-landscape) {
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+// }
+
+// .navigation-wrapper-landscape {
+//     @include mq(xxsmall-landscape) {
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
+
+
+
+
+
+// .top-buttons-wrapper {
+//     display: flex;
+//     justify-content: space-evenly;
+//     margin-top: 2vh;
+//     // background-color: lighten($color, 3%);
+//     // border: 1vh solid lighten($color, 15%);
+
+//     button {
+//         padding: .5vh 1vh;
+//         border: none;
+//     }
+// }

@@ -1,0 +1,97 @@
+.portfolio {
+    &__project {
+        border-bottom: dashed .4vh #eee;
+
+        &:nth-last-child(1) {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    &__project-name {
+        margin: 2vh 0;
+        text-align: center;
+
+        @include mq (xxsmall-landscape) {
+            font-size: 1.7rem;
+        }
+
+        @include mq(xlarge-landscape) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__project-wrapper {
+        position: relative;
+        border: 1vh solid lighten($color, 15%);
+        border-radius: 3vh;
+
+        i {
+            display: none;
+            font-size: 2rem;
+            color: #0f0;
+        }
+
+        @media (any-hover: hover) {
+            &:hover i {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__project-hover-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2vh 0;
+        background-color: lighten($color, 3%);
+        border-radius: 3vh;
+        transition: .2s;
+
+        @include mq(xxsmall-landscape) {
+            cursor: pointer;
+        }
+
+        .portfolio__screenshot-link {
+            flex-basis: 50%;
+
+            @include mq(xxsmall-landscape) {
+                flex-basis: 20%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 2vh;
+            }
+        }
+
+        .portfolio__technologies {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-basis: 15%;
+
+            @include mq (xxsmall-landscape) {
+                align-self: center;
+                flex-basis: 5%;
+                gap: 5vh;
+            }
+
+            .portfolio__icon {
+                width: 100%;
+            }
+        }
+    }
+
+    &__description {
+        // margin-top: 2vh;
+        // margin-bottom: 1vh;
+        margin: 2vh 0;
+        text-align: center;
+    }
+}

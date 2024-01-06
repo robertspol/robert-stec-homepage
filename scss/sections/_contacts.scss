@@ -1,0 +1,90 @@
+.contacts {
+    &__phone-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+
+        .contacts__phone-icon-wrapper {
+            display: flex;
+            align-items: center;
+            color: #0f0;
+            cursor: pointer;
+
+            p {
+                margin-left: 1vh;
+            }
+        }
+    }
+
+    &__email {
+        margin-bottom: 2vh;
+    }
+
+    &__email-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh 0 1vh;
+        color: #f00;
+
+        p {
+            margin-left: 1vh;
+        }
+    }
+
+    &__form-flex-wrapper {
+        display: flex;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh auto 0;
+        padding: 0 2vw;
+        background-color: lighten($color, 3%);
+        border: 1vh solid lighten($color, 15%);
+        border-radius: 2vh;
+
+        label {
+            display: block;
+            margin-bottom: .5vh;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1vh;
+            padding: .5vh;
+            font-size: 1rem;
+            border-radius: .8vh;
+            border: none;
+            outline: none;
+        }
+
+        .contacts__button {
+            margin: 1vh 0 2vh;
+            padding: .5vh 1vh;
+            background-color: #00c;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 1vh;
+            cursor: pointer;
+            transition: .2s;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #00f;
+                }
+            }
+
+            @include mq(xxsmall-landscape) {
+                font-size: 1.3rem;
+            }
+
+            @include mq(large-landscape) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

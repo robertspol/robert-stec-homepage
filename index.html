@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Stec - homepage</title>
+    <link rel="stylesheet" href="css/index.min.css">
+    <script src="https://kit.fontawesome.com/83b6ac67d9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-and-buttons">
+            <header class="header">
+                <h1 class="header__name">Robert Stec</h1>
+                <h2 class="header__position">Frontend Developer</h2>
+            </header>
+
+            <section class="top-buttons-wrapper">
+                <button class="top-buttons-wrapper__contacts">Kontakt</button>
+                <button class="top-buttons-wrapper__translate">Translate into english</button>
+            </section>
+        </div>
+
+        <main class="main">
+            <section class="main__section about">
+                <h3 class="main__section-name">O mnie</h3>
+
+                <p>Witaj na mojej stronie! Nazywam się Robert Stec i jestem pasjonatem programowania. Zawsze byłem
+                    humanistą żądnym poznawania świata i definiowania go za pomocą tekstu, jednak z czasem postanowiłem
+                    rozwinąć się o nauki ścisłe i rozpocząłem pisać tekst w postaci kodu. Programowanie to władza nad
+                    niesamowicie potężną maszyną, jaką jest komputer, a ja nieustannie rozwijam swoje umiejętności, aby
+                    dostarczyć jak najlepszy produkt każdemu, kto zdecyduje się na kontakt ze mną i skorzystanie z moich
+                    usług. Polecam się i dziękuję za odwiedzenie mojej strony!</p>
+            </section>
+
+            <section class="main__section portfolio">
+                <h3 class="main__section-name">Portfolio</h3>
+
+                <article class="portfolio__project">
+                    <h4 class="portfolio__project-name portfolio__project-name--gry">Gry</h4>
+
+                    <div class="portfolio__project-wrapper portfolio__project-wrapper--gry">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        <div class="portfolio__project-hover-wrapper">
+                            <div class="portfolio__screenshot-link">
+                                <img src="img/screenshots/gry.jpg" alt="Gry - screenshot-link">
+                            </div>
+
+                            <div class="portfolio__technologies">
+                                <img class="portfolio__icon" src="img/icons/html.png" alt="HTML - icon">
+                                <img class="portfolio__icon" src="img/icons/css.png" alt="CSS - icon">
+                                <img class="portfolio__icon" src="img/icons/javascript.png" alt="JavaScript - icon">
+                                <img class="portfolio__icon" src="img/icons/php.png" alt="PHP - icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="portfolio__description portfolio__description--gry">Dwie gry z możliwością założenia konta
+                        oraz zapisywania stanu
+                        rozgrywki</p>
+                </article>
+
+                <article class="portfolio__project">
+                    <h4 class="portfolio__project-name">Chat</h4>
+
+                    <div class="portfolio__project-wrapper portfolio__project-wrapper--chat">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        <div class="portfolio__project-hover-wrapper">
+                            <div class="portfolio__technologies">
+                                <img class="portfolio__icon" src="img/icons/html.png" alt="HTML - icon">
+                                <img class="portfolio__icon" src="img/icons/css.png" alt="CSS - icon">
+                                <img class="portfolio__icon" src="img/icons/javascript.png" alt="JavaScript - icon">
+                                <img class="portfolio__icon" src="img/icons/php.png" alt="PHP - icon">
+                            </div>
+
+                            <div class="portfolio__screenshot-link">
+                                <img src="img/screenshots/chat.jpg" alt="Chat - screenshot-link">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="portfolio__description portfolio__description--chat">Komunikator internetowy</p>
+                </article>
+
+                <article class="portfolio__project">
+                    <h4 class="portfolio__project-name">English
+                        Language School</h4>
+
+                    <div class="portfolio__project-wrapper portfolio__project-wrapper--english-language-school">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        <div class="portfolio__project-hover-wrapper">
+                            <div class="portfolio__screenshot-link">
+                                <img src="img/screenshots/english-language-school.jpg"
+                                    alt="English Language School - screenshot-link">
+                            </div>
+
+                            <div class="portfolio__technologies">
+                                <img class="portfolio__icon" src="img/icons/html.png" alt="HTML - icon">
+                                <img class="portfolio__icon" src="img/icons/css.png" alt="CSS - icon">
+                                <img class="portfolio__icon" src="img/icons/javascript.png" alt="JavaScript - icon">
+                                <img class="portfolio__icon" src="img/icons/react.png" alt="React.js - icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="portfolio__description portfolio__description--english-language-school">Strona internetowa
+                        nieistniejącej szkoły języka angielskiego z
+                        interaktywnym słownikiem zawierającym podstawowe wyrażenia i zautomatyzowaną galerią z
+                        możliwością ręcznego operowania</p>
+                </article>
+
+                <article class="portfolio__project">
+                    <h4 class="portfolio__project-name">Rysiu Taxi Strzegom
+                    </h4>
+
+                    <div class="portfolio__project-wrapper portfolio__project-wrapper--rysiu-taxi-strzegom">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        <div class="portfolio__project-hover-wrapper">
+                            <div class="portfolio__technologies">
+                                <img class="portfolio__icon" src="img/icons/html.png" alt="HTML - icon">
+                                <img class="portfolio__icon" src="img/icons/css.png" alt="CSS - icon">
+                                <img class="portfolio__icon" src="img/icons/javascript.png" alt="JavaScript - icon">
+                            </div>
+
+                            <div class="portfolio__screenshot-link">
+                                <img src="img/screenshots/rysiu-taxi-strzegom.jpg"
+                                    alt="Rysiu Taxi Strzegom - screenshot-link">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="portfolio__description portfolio__description--rysiu-taxi-strzegom">Strona
+                        internetowa-wizytówka kierowcy taksówki</p>
+                </article>
+
+                <article class="portfolio__project">
+                    <h4 class="portfolio__project-name portfolio__project-name--rozrywkoland">Rozrywkoland</h4>
+
+                    <div class="portfolio__project-wrapper portfolio__project-wrapper--rozrywkoland">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        <div class="portfolio__project-hover-wrapper">
+                            <div class="portfolio__screenshot-link">
+                                <img src="img/screenshots/rozrywkoland.jpg" alt="Rozrywkoland - screenshot-link">
+                            </div>
+
+                            <div class="portfolio__technologies">
+                                <img class="portfolio__icon" src="img/icons/html.png" alt="HTML - icon">
+                                <img class="portfolio__icon" src="img/icons/css.png" alt="CSS - icon">
+                                <img class="portfolio__icon" src="img/icons/javascript.png" alt="JavaScript - icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="portfolio__description portfolio__description--rozrywkoland">Strona internetowa-wizytówka
+                        firmy oferującej usługi
+                        rozrywkowe oraz medyczne</p>
+                </article>
+            </section>
+
+            <section class="main__section contacts">
+                <h3 class="main__section-name">Kontakt</h3>
+
+                <div class="contacts__phone-wrapper">
+                    <div class="contacts__phone-icon-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+48 669 326 496</p>
+                    </div>
+                </div>
+
+                <div class="contacts__email">
+                    <div class="contacts__form-flex-wrapper">
+                        <form class="contacts__form" onsubmit="return false">
+                            <div class="contacts__email-icon-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Napisz do mnie e-mail</p>
+                            </div>
+
+                            <label for="sendername">Od</label>
+                            <input type="text" id="sendername">
+
+                            <label for="subject">Temat</label>
+                            <input type="text" id="subject">
+
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" cols="20" rows="10"></textarea>
+
+                            <button class="contacts__button">Wyślij</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>Copyright &copy; 2023</footer>
+
+        <i class="fa-solid fa-angles-up"></i>
+    </div>
+
+    <script src="js/translation.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/sendEmail.js"></script>
+</body>
+
+</html>
