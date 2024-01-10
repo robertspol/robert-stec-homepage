@@ -1,4 +1,3 @@
-// const contactsSection = document.querySelector('.contacts');
 const topArrow = document.querySelector('.fa-angles-up');
 
 contactsButton.addEventListener('click', function () {

@@ -64,7 +64,7 @@
         .contacts__button {
             margin: 1vh 0 2vh;
             padding: .5vh 1vh;
-            background-color: #00c;
+            background-color: #0a0;
             color: #fff;
             font-size: 1rem;
             border: none;
@@ -74,7 +74,8 @@
 
             @media (any-hover: hover) {
                 &:hover {
-                    background-color: #00f;
+                    background-color: #0d0;
+                    box-shadow: 0 0 2vh #0f0;
                 }
             }
 

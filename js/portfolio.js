@@ -1,29 +1,33 @@
 const projectHoverWrappers = document.querySelectorAll('.portfolio__project-hover-wrapper');
 const arrows = document.querySelectorAll('.fa-arrow-up-right-from-square');
 
-// if (arrow.matches(':hover')) {
-arrows.forEach((arrow, i) => {
-    arrow.addEventListener('mouseenter', function () {
-        projectHoverWrappers[i].style.opacity = '.2';
-    });
+function handleHover() {
+    const hoverMediaQueries = matchMedia('(any-hover: hover)');
 
-    arrow.addEventListener('mouseleave', function () {
-        projectHoverWrappers[i].style.opacity = '1';
-    });
-});
-// }
+    if (hoverMediaQueries.matches) {
+        arrows.forEach((arrow, i) => {
+            arrow.addEventListener('mouseenter', function () {
+                projectHoverWrappers[i].style.opacity = '.2';
+            });
 
-// if (projectHoverWrapper.matches(':hover')) {
-projectHoverWrappers.forEach(wrapper => {
-    wrapper.addEventListener('mouseenter', function () {
-        this.style.opacity = '.2';
-    });
+            arrow.addEventListener('mouseleave', function () {
+                projectHoverWrappers[i].style.opacity = '1';
+            });
+        });
 
-    wrapper.addEventListener('mouseleave', function () {
-        this.style.opacity = '1';
-    });
-});
-// }
+        projectHoverWrappers.forEach(wrapper => {
+            wrapper.addEventListener('mouseenter', function () {
+                this.style.opacity = '.2';
+            });
+
+            wrapper.addEventListener('mouseleave', function () {
+                this.style.opacity = '1';
+            });
+        });
+    }
+}
+
+handleHover();
 
 const gryWrapper = document.querySelector('.portfolio__project-wrapper--gry');
 const chatWrapper = document.querySelector('.portfolio__project-wrapper--chat');
