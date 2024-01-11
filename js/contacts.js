@@ -18,3 +18,7 @@ function changeTextAreaSize() {
 }
 
 changeTextAreaSize();
+
+window.addEventListener('resize', () => {
+    changeTextAreaSize();
+});
