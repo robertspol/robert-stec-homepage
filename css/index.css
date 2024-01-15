@@ -127,14 +127,14 @@ footer {
 }
 .header__name .diff-letter {
   display: inline-block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 .header__name .diff-letter--anim {
   -webkit-transform: rotate(15deg) translateY(1.2vh);
           transform: rotate(15deg) translateY(1.2vh);
   -webkit-animation: neon 2s infinite;
           animation: neon 2s infinite;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header__position {
   font-size: 1.2rem;
