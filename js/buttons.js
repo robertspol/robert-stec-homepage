@@ -1,4 +1,4 @@
-const topArrow = document.querySelector('.fa-angles-up');
+const arrowUp = document.querySelector('.arrow-up');
 
 contactsButton.addEventListener('click', function () {
     scrollTo({
@@ -7,7 +7,7 @@ contactsButton.addEventListener('click', function () {
     });
 });
 
-topArrow.addEventListener('click', function () {
+arrowUp.addEventListener('click', function () {
     scrollTo({
         top: 0,
         behavior: 'smooth',
@@ -16,8 +16,8 @@ topArrow.addEventListener('click', function () {
 
 document.addEventListener('scroll', function () {
     if (scrollY > 100) {
-        topArrow.style.display = 'block';
+        arrowUp.style.display = 'block';
     } else {
-        topArrow.style.display = 'none';
+        arrowUp.style.display = 'none';
     }
 });

@@ -2,6 +2,10 @@
     text-align: center;
 
     &__name {
+        // color: yellow;
+        // text-shadow: 0 0 2vh yellow, 0 0 3vh yellow;
+        letter-spacing: -.5vh;
+
         @include mq(xxsmall-landscape) {
             font-size: 4rem;
         }
@@ -13,14 +17,42 @@
         @include mq(large-landscape) {
             font-size: 3rem;
         }
+
+        &--active {
+            color: yellow;
+            text-shadow: 0 0 2vh yellow, 0 0 3vh yellow;
+        }
+
+        .diff-letter {
+            display: inline-block;
+            transform: rotate(15deg) translateY(1.2vh);
+
+            &--anim {
+                animation: neon 2s 2s infinite;
+            }
+        }
     }
 
     &__position {
+        // color: #00f;
         font-size: 1.2rem;
+        // transform: translateX(-2000%);
+        // text-shadow: 0 0 2vh blue, 0 0 3vh blue;
+        letter-spacing: -.2vh;
+        transition: .5s;
 
         @include mq(xxsmall-landscape) {
             font-size: 1.5rem;
         }
+
+        &--active {
+            color: #00f;
+            text-shadow: 0 0 2vh #00f, 0 0 3vh #00f;
+        }
+    }
+
+    .header-space {
+        margin-right: 3vh;
     }
 }
 
@@ -57,8 +89,6 @@
                 top: 0;
                 width: 100%;
                 height: 100%;
-                // background-color: greenyellow;
-                // background-color: #fff;
                 background-color: #00f;
                 transform: translateX(-100%) rotate(10deg);
                 transform-origin: top left;

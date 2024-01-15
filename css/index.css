@@ -83,7 +83,7 @@ footer {
   }
 }
 
-.fa-angles-up {
+.arrow-up {
   display: none;
   position: fixed;
   right: 0.5vh;
@@ -93,7 +93,7 @@ footer {
   cursor: pointer;
 }
 @media (min-width: 360px) and (orientation: landscape) {
-  .fa-angles-up {
+  .arrow-up {
     right: 2vh;
     bottom: 1vh;
     font-size: 2rem;
@@ -102,6 +102,9 @@ footer {
 
 .header {
   text-align: center;
+}
+.header__name {
+  letter-spacing: -0.5vh;
 }
 @media (min-width: 360px) and (orientation: landscape) {
   .header__name {
@@ -118,13 +121,36 @@ footer {
     font-size: 3rem;
   }
 }
+.header__name--active {
+  color: yellow;
+  text-shadow: 0 0 2vh yellow, 0 0 3vh yellow;
+}
+.header__name .diff-letter {
+  display: inline-block;
+  -webkit-transform: rotate(15deg) translateY(1.2vh);
+          transform: rotate(15deg) translateY(1.2vh);
+}
+.header__name .diff-letter--anim {
+  -webkit-animation: neon 2s 2s infinite;
+          animation: neon 2s 2s infinite;
+}
 .header__position {
   font-size: 1.2rem;
+  letter-spacing: -0.2vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 @media (min-width: 360px) and (orientation: landscape) {
   .header__position {
     font-size: 1.5rem;
   }
+}
+.header__position--active {
+  color: #00f;
+  text-shadow: 0 0 2vh #00f, 0 0 3vh #00f;
+}
+.header .header-space {
+  margin-right: 3vh;
 }
 
 @media (min-width: 360px) and (orientation: landscape) {
@@ -403,5 +429,107 @@ footer {
 @media (min-width: 1024px) and (orientation: landscape) {
   .contacts__form .contacts__button {
     font-size: 1.1rem;
+  }
+}
+
+@-webkit-keyframes neon {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes neon {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=index.css.map */
