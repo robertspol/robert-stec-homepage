@@ -1,65 +1,65 @@
 @keyframes neon {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     12% {
-        opacity: 0.5
+        opacity: 1;
     }
 
     15% {
-        opacity: 1
-    }
-
-    30% {
-        opacity: 0
-    }
-
-    33% {
-        opacity: 0.5
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0
-    }
-
-    55% {
-        opacity: 0.5
-    }
-
-    60% {
-        opacity: 1
-    }
-
-    65% {
-        opacity: 0.5
-    }
-
-    70% {
-        opacity: 0
-    }
-
-    72% {
-        opacity: 0.5
-    }
-
-    80% {
-        opacity: 1
-    }
-
-    90% {
-        opacity: 0.5;
-    }
-
-    93% {
         opacity: 0;
     }
 
-    100% {
+    30% {
+        opacity: .5;
+    }
+
+    33% {
         opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: .5;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .5;
+    }
+
+    72% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: .5;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    93% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .5;
     }
 }

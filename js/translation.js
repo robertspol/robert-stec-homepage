@@ -79,7 +79,11 @@ translationButton.addEventListener('click', () => {
 
     if (translation === true) {
         translateIntoEnglish();
+        contactsButton.setAttribute('title', 'Contact me');
+        translationButton.setAttribute('title', 'Translate into english');
     } else {
         translateIntoPolish();
+        contactsButton.setAttribute('title', 'Skontaktuj się ze mną');
+        translationButton.setAttribute('title', 'Przetłumacz na język polski');
     }
 });

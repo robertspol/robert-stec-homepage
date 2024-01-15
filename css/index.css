@@ -127,12 +127,14 @@ footer {
 }
 .header__name .diff-letter {
   display: inline-block;
-  -webkit-transform: rotate(15deg) translateY(1.2vh);
-          transform: rotate(15deg) translateY(1.2vh);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header__name .diff-letter--anim {
-  -webkit-animation: neon 2s 2s infinite;
-          animation: neon 2s 2s infinite;
+  -webkit-transform: rotate(15deg) translateY(1.2vh);
+          transform: rotate(15deg) translateY(1.2vh);
+  -webkit-animation: neon 2s infinite;
+          animation: neon 2s infinite;
 }
 .header__position {
   font-size: 1.2rem;
@@ -146,8 +148,8 @@ footer {
   }
 }
 .header__position--active {
-  color: #00f;
-  text-shadow: 0 0 2vh #00f, 0 0 3vh #00f;
+  color: #0f0;
+  text-shadow: 0 0 2vh #0f0, 0 0 3vh #0f0;
 }
 .header .header-space {
   margin-right: 3vh;
@@ -434,102 +436,102 @@ footer {
 
 @-webkit-keyframes neon {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   12% {
-    opacity: 0.5;
+    opacity: 1;
   }
   15% {
-    opacity: 1;
+    opacity: 0;
   }
   30% {
-    opacity: 0;
+    opacity: 0.5;
   }
   33% {
-    opacity: 0.5;
+    opacity: 1;
   }
   40% {
-    opacity: 1;
+    opacity: 0;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   55% {
-    opacity: 0.5;
+    opacity: 1;
   }
   60% {
-    opacity: 1;
+    opacity: 0.5;
   }
   65% {
-    opacity: 0.5;
+    opacity: 0;
   }
   70% {
-    opacity: 0;
+    opacity: 0.5;
   }
   72% {
-    opacity: 0.5;
+    opacity: 1;
   }
   80% {
-    opacity: 1;
-  }
-  90% {
     opacity: 0.5;
   }
-  93% {
+  90% {
     opacity: 0;
   }
-  100% {
+  93% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 
 @keyframes neon {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   12% {
-    opacity: 0.5;
+    opacity: 1;
   }
   15% {
-    opacity: 1;
+    opacity: 0;
   }
   30% {
-    opacity: 0;
+    opacity: 0.5;
   }
   33% {
-    opacity: 0.5;
+    opacity: 1;
   }
   40% {
-    opacity: 1;
+    opacity: 0;
   }
   50% {
-    opacity: 0;
+    opacity: 0.5;
   }
   55% {
-    opacity: 0.5;
+    opacity: 1;
   }
   60% {
-    opacity: 1;
+    opacity: 0.5;
   }
   65% {
-    opacity: 0.5;
+    opacity: 0;
   }
   70% {
-    opacity: 0;
+    opacity: 0.5;
   }
   72% {
-    opacity: 0.5;
+    opacity: 1;
   }
   80% {
-    opacity: 1;
-  }
-  90% {
     opacity: 0.5;
   }
-  93% {
+  90% {
     opacity: 0;
   }
-  100% {
+  93% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }/*# sourceMappingURL=index.css.map */
