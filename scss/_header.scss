@@ -2,8 +2,6 @@
     text-align: center;
 
     &__name {
-        // color: yellow;
-        // text-shadow: 0 0 2vh yellow, 0 0 3vh yellow;
         letter-spacing: -.5vh;
 
         @include mq(xxsmall-landscape) {
@@ -34,10 +32,7 @@
     }
 
     &__position {
-        // color: #00f;
         font-size: 1.2rem;
-        // transform: translateX(-2000%);
-        // text-shadow: 0 0 2vh blue, 0 0 3vh blue;
         letter-spacing: -.2vh;
         transition: .5s;
 
