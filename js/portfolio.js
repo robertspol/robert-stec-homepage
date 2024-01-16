@@ -29,28 +29,28 @@ function handleHover() {
 
 handleHover();
 
-const gryWrapper = document.querySelector('.portfolio__project-wrapper--gry');
+const gamesWrapper = document.querySelector('.portfolio__project-wrapper--games');
 const chatWrapper = document.querySelector('.portfolio__project-wrapper--chat');
 const englishLanguageSchoolWrapper = document.querySelector('.portfolio__project-wrapper--english-language-school');
 const rysiuTaxiStrzegomWrapper = document.querySelector('.portfolio__project-wrapper--rysiu-taxi-strzegom');
 const rozrywkolandWrapper = document.querySelector('.portfolio__project-wrapper--rozrywkoland');
 
-gryWrapper.addEventListener('click', function () {
-    open('https://github.com/robertspol/Gry');
+gamesWrapper.addEventListener('click', function () {
+    open('https://github.com/robertspol/games');
 });
 
 chatWrapper.addEventListener('click', function () {
-    open('https://github.com/robertspol/Chat');
+    open('https://github.com/robertspol/chat');
 });
 
 englishLanguageSchoolWrapper.addEventListener('click', function () {
-    open('https://robertspol.github.io/English-Language-School');
+    open('https://robertspol.github.io/english_language_school');
 });
 
 rysiuTaxiStrzegomWrapper.addEventListener('click', function () {
-    open('https://robertspol.github.io/Rysiu-Taxi-Strzegom');
+    open('https://robertspol.github.io/rysiu_taxi_strzegom');
 });
 
 rozrywkolandWrapper.addEventListener('click', function () {
-    open('https://robertspol.github.io/Rozrywkoland');
+    open('https://robertspol.github.io/rozrywkoland');
 });
