@@ -80,7 +80,7 @@ translationButton.addEventListener('click', () => {
     if (translation === true) {
         translateIntoEnglish();
         contactsButton.setAttribute('title', 'Contact me');
-        translationButton.setAttribute('title', 'Translate into english');
+        translationButton.setAttribute('title', 'Translate into English');
     } else {
         translateIntoPolish();
         contactsButton.setAttribute('title', 'Skontaktuj się ze mną');
