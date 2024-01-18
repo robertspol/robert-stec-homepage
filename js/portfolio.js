@@ -44,7 +44,7 @@ chatWrapper.addEventListener('click', function () {
 });
 
 englishLanguageSchoolWrapper.addEventListener('click', function () {
-    open('https://robertspol.github.io/english_language_school');
+    open('https://robertspol.github.io/english-language-school');
 });
 
 rysiuTaxiStrzegomWrapper.addEventListener('click', function () {
