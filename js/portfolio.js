@@ -48,7 +48,7 @@ englishLanguageSchoolWrapper.addEventListener('click', function () {
 });
 
 rysiuTaxiStrzegomWrapper.addEventListener('click', function () {
-    open('https://robertspol.github.io/rysiu_taxi_strzegom');
+    open('https://robertspol.github.io/rysiu-taxi-strzegom');
 });
 
 rozrywkolandWrapper.addEventListener('click', function () {
