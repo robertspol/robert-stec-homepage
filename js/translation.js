@@ -26,6 +26,9 @@ const translateIntoEnglish = () => {
     contactsButton.textContent = 'Contacts';
     translationButton.textContent = 'Przetłumacz na polski';
 
+    contactsButton.setAttribute('title', 'Contact me');
+    translationButton.setAttribute('title', 'Translate into Polish');
+
     aboutNameSection.textContent = 'About me';
     textAbout.textContent = 'Welcome to my website! My name is Robert Stec, and I am a programming enthusiast. I have always been a humanities person eager to explore the world and define it through text. However, over time, I decided to expand my horizons into the realm of exact sciences and began writing text in the form of code. Programming is control over an incredibly powerful machine, which is a computer, and I am constantly developing my skills to deliver the best possible product to anyone who chooses to get in touch with me and use my services. I recommend myself and thank you for visiting my site!';
 
@@ -47,7 +50,10 @@ const translateIntoEnglish = () => {
 
 const translateIntoPolish = () => {
     contactsButton.textContent = 'Kontakt';
-    translationButton.textContent = 'Translate into english';
+    translationButton.textContent = 'Translate into English';
+
+    contactsButton.setAttribute('title', 'Skontaktuj się ze mną');
+    translationButton.setAttribute('title', 'Przetłumacz na język angielski');
 
     aboutNameSection.textContent = 'O mnie';
     textAbout.textContent = 'Witaj na mojej stronie! Nazywam się Robert Stec i jestem pasjonatem programowania. Zawsze byłem humanistą żądnym poznawania świata i definiowania go za pomocą tekstu, jednak z czasem postanowiłem rozwinąć się o nauki ścisłe i rozpocząłem pisać tekst w postaci kodu. Programowanie to władza nad niesamowicie potężną maszyną, jaką jest komputer, a ja nieustannie rozwijam swoje umiejętności, aby dostarczyć jak najlepszy produkt każdemu, kto zdecyduje się na kontakt ze mną i skorzystanie z moich usług. Polecam się i dziękuję za odwiedzenie mojej strony!';
@@ -79,11 +85,7 @@ translationButton.addEventListener('click', () => {
 
     if (translation === true) {
         translateIntoEnglish();
-        contactsButton.setAttribute('title', 'Contact me');
-        translationButton.setAttribute('title', 'Translate into English');
     } else {
         translateIntoPolish();
-        contactsButton.setAttribute('title', 'Skontaktuj się ze mną');
-        translationButton.setAttribute('title', 'Przetłumacz na język polski');
     }
 });
