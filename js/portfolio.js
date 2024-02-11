@@ -49,7 +49,7 @@ const rozrywkolandWrapper = document.querySelector(
 );
 
 magicOfScienceWrapper.addEventListener("click", function () {
-    open("https://github.com/robertspol/magic-of-science");
+    open("https://robertspol.github.io/magic-of-science/");
 });
 
 gamesWrapper.addEventListener("click", function () {
@@ -61,13 +61,13 @@ chatWrapper.addEventListener("click", function () {
 });
 
 englishLanguageSchoolWrapper.addEventListener("click", function () {
-    open("https://robertspol.github.io/english-language-school");
+    open("https://robertspol.github.io/english-language-school/");
 });
 
 rysiuTaxiStrzegomWrapper.addEventListener("click", function () {
-    open("https://robertspol.github.io/rysiu-taxi-strzegom");
+    open("https://robertspol.github.io/rysiu-taxi-strzegom/");
 });
 
 rozrywkolandWrapper.addEventListener("click", function () {
-    open("https://robertspol.github.io/rozrywkoland");
+    open("https://robertspol.github.io/rozrywkoland/");
 });
