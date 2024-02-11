@@ -13,6 +13,10 @@ const projectGamesName = document.querySelector(
     ".portfolio__project-name--games"
 );
 
+const projectEnglishLanguageSchoolName = document.querySelector(
+    ".portfolio__project-name--english-language-school"
+);
+
 const magicOfScienceDescription = document.querySelector(
     ".portfolio__description--magic-of-science"
 );
@@ -53,6 +57,7 @@ const translateIntoEnglish = () => {
 
     projectMagicOfScienceName.textContent = "Magic Of Science";
     projectGamesName.textContent = "Games";
+    projectEnglishLanguageSchoolName.textContent = "English Language School";
 
     magicOfScienceDescription.textContent =
         'A Single Page Application (SPA) that consists of 3 sections. The first section provides trivia about prime numbers along with an algorithm for calculating them, the second is a game inspired by the quiz show "Who Wants to Be a Millionaire?" with questions related to the world of science, and the third allows downloading space photos from NASA';
@@ -87,6 +92,7 @@ const translateIntoPolish = () => {
 
     projectMagicOfScienceName.textContent = "Magia Nauki";
     projectGamesName.textContent = "Gry";
+    projectEnglishLanguageSchoolName.textContent = "Szkoła Języka Angielskiego";
 
     magicOfScienceDescription.textContent =
         'Aplikacja SPA, która składa się z trzech sekcji. Pierwsza zawiera ciekawostki na temat liczb pierwszych wraz z algorytmem do ich obliczania, druga to gra inspirowana teleturniejem "Milionerzy" z pytaniami związanymi ze światem nauki, a trzecia umożliwia pobieranie zdjęć kosmosu udostępnianych przez NASA';
